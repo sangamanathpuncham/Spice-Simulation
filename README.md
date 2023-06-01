@@ -1,6 +1,6 @@
 # Spice-Simulation
 
-3)Circuit Design using sky130(ngspice):
+Circuit Design using sky130(ngspice):
    ------
 
 Day 1:
