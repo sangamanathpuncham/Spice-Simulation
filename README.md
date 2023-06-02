@@ -94,4 +94,37 @@ Define Tecnology Parameter:
     
 ![image](https://github.com/sangamanathpuncham/VSD_HDP/assets/132802184/3d444791-ccb0-47cc-a443-1a28391f0b33)
 
+Day 2:
 
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/299605dd-0584-4111-b941-adffe9e3f98d)
+
+source name.cir
+
+run
+
+setplot
+
+dc1
+
+display
+
+plot -vdd#branch
+
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/5c8486a6-7ac1-43bf-81d7-99d91c2f6318)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/4dff2944-0ec5-4647-95be-5f975a1f64ef)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/7a883475-d08f-4f69-b983-a6964f7822e7)
+
+CMOS Voltage Charectristics:
+----
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/3d622982-0b8d-4ecd-b106-44918d62c3d7)
+
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/59cea36f-58d0-4533-9191-a9294d27f387)
+
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/0237d44e-88e9-4072-9d46-dffaefd37c52)
