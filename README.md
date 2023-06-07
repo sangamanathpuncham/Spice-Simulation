@@ -128,3 +128,11 @@ CMOS Voltage Charectristics:
 
 
 ![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/0237d44e-88e9-4072-9d46-dffaefd37c52)
+
+
+
+
+
+
+
+
