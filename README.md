@@ -3,7 +3,8 @@
 Circuit Design using sky130(ngspice):
    ------
 
-Day 1:
+Day 1: Drain current and Drain to source voltage:
+----
     
 Why we need circuit design and spice simulation beacause we are making timing claculation,cts other timing information comes from the LUP table that will be updated by 
     
@@ -94,7 +95,8 @@ Define Tecnology Parameter:
     
 ![image](https://github.com/sangamanathpuncham/VSD_HDP/assets/132802184/3d444791-ccb0-47cc-a443-1a28391f0b33)
 
-Day 2:
+Day 2:Volocity Saturation:
+---
 
 
 ![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/299605dd-0584-4111-b941-adffe9e3f98d)
@@ -130,9 +132,58 @@ CMOS Voltage Charectristics:
 ![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/0237d44e-88e9-4072-9d46-dffaefd37c52)
 
 
+Day 3: Switching thresold and Dynamic simulation:
+----
+
+Wider the width:
+
+The switching voltage Vm is that where Vin=Vout (nmos and pmos in saturation), and it defines the robustness of the CMOS.
+
+It is derived by setting IdsP=-IdsN to get Vm=RVdd/(1+R) where R=(KpVdsatP)/(KnVdsatN) and where Kp=Wp/LpKp' and Kn=Wn/Ln*Kn'. 
+
+Given target Vm, we can derive from the previous equation the needed W/L ratios.
+
+When the pmos width is wider than that of nmos, the switching voltage of the VTC shifts to the right slightly (advantage). As width of pmos increases as an integer multiple of that of 
+
+nmos (for same L), the rise delay and fall delay decreases rapidly (time to charge decreases as width is wider) and increases respectively. For one some sizing (factor of 2), we observe 
+
+an equal rise and fall times (symmetric property which is a typical characteristic of a clock inverter/buffer where resistance of pmos is approximately equal to resistance of nmos in that
+
+case due to the W/L ratios). Other sizing for inverters is used to get regular inverter/buffer that would be preferred in the data path.
 
 
+Day 4: Noise margin 
+----
 
+When Vin<=VIL (logic 0), Vout is expected to ber VOH, and when Vin>=VIH (logic 1), vout is expected to be VOL (note that the slope at VIL and VIH is -1). The noise margin is defined as
+
+VIH-VIL (undefined region: voltage ranges at which the logic does not differentiate between 0 and 1). Noise margin high (interpereted as logic 1) = VOH-VIH and noise margin low 
+
+(interpreted as logic 0) = VIL-VOL. Ideally, we want a CMOS inverter to have a noise margin of 0. When the width of the pmos increases with respect to nmos width, noise margin high 
+
+increases while noise margin low stays the same then drops as the pmos is responsible for the high value output. Digital design relies on the areas of noise margin high and noise margin 
+
+low.
+
+Day 5:Power supply and Etching variation:
+----
+
+CMOS inverter can operate at supply voltage of even 0.5v and advantages are: at 0.5v, the gain (rate of change of output as input changes, change in output voltage dibided by change in 
+
+input voltage at slopes of -1) is huge (close to 50% compared to 2.5v) and energy consumed is 1/2*CV^2 so less energy is consumed (close to 90% improvement compared to 2.5v). Disadvantage 
+
+of using 0.5 power supply: very slow operation as fall time and rise time are huge -> huge impact on performance.
+
+
+Etching is the process of creating patterns on substrates, in which materials will be removed selectively from a thin film on a substrate. Variation in L and W takes place because of non-
+
+ideal mask, which in turn impacts the drain current. Variation in oxide thickness is due to non-idealities in the fabriaction process that leads to non-ideal oxidation process, which in 
+
+process affacts the drain current. In a chain of inverters, sources of variation affect the inverters on sides more severely. To mimic device variations, Wn and Wp were varied from a 
+
+strong pmos-weak nmos to a weak pmos-strong nmos, and from the VTCs we could see that there is a small shift in Vm, the switching voltgae, and small variations in the noise margins (high 
+
+and low) -> the CMOS inverter is highly robust to device variation.
 
 
 
