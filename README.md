@@ -185,5 +185,60 @@ strong pmos-weak nmos to a weak pmos-strong nmos, and from the VTCs we could see
 
 and low) -> the CMOS inverter is highly robust to device variation.
 
+LAB 1: id and vds
+----
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/5a565343-210e-4d2c-b60f-e50ebe37434d)
 
 
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/68b83ada-80df-4119-bd80-5e0f4188ee71)
+
+LAB 2: Vds and Vgs
+---
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/69370a27-c3b0-478d-ba30-20e61f2c74e0)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/a53bc8dc-047c-4d82-a02f-5aa3d4b039bd)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/88119101-e48a-47dc-aa59-3a25c01cbd6c)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/308d8a22-e8a7-4a42-bb1d-627223e4baa2)
+
+LAB 3: out vs in and VTC
+----
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/4ede1770-02ab-4616-b5ed-853259f78008)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/6cb51a8a-d2de-4ffb-8dee-d19e735dc044)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/abfdcea0-d293-4f57-ae6d-f72c5c13ecc9)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/1d12764b-beb2-468f-8c54-e50c795ae166)
+
+LAB 4:Noise Margin
+----
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/221c38df-7376-426c-b2fb-821bc5a4ea52)
+
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/9c61178a-e6c5-4811-b1f4-9d23d478fe19)
+
+
+Noise Margin High=Voh-Vih
+
+Noise Margin Low=Vol-Vil
+
+LAB 5:Supply and Etching Variation:
+---
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/9da5a835-9388-4ccf-acc4-7bba5cc7c6b9)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/1b68749f-a2a4-45ef-8418-508f26cbd369)
+
+Gain=change in output/change in input
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/ecc37220-1d98-4ebf-828f-6c90db67c889)
+
+![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/fbb65f29-98dd-4a06-8719-a79491a5772a)
+
+output holding vdd compare to the gnd due to increase in the pmos
