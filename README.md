@@ -132,7 +132,7 @@ CMOS Voltage Charectristics:
 ![image](https://github.com/sangamanathpuncham/Spice-Simulation/assets/132802184/0237d44e-88e9-4072-9d46-dffaefd37c52)
 
 
-Day 3: Switching thresold and Dynamic simulation:
+Day 3: Switching threshold and Dynamic simulation:
 ----
 
 Wider the width:
